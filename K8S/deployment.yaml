@@ -1,7 +1,7 @@
 apiVersion: "apps/v1"
 kind: "Deployment"
 metadata:
-  name: "pilgrimage_project"
+  name: "pilgrimage-project"
   namespace: "pilgrimage"
   labels:
     app: "frontend"
@@ -16,7 +16,7 @@ spec:
         app: "frontend"
     spec:
       containers:
-        - name: "pilgrimage_project"
+        - name: "pilgrimage-project"
           image: "845242191149.dkr.ecr.ap-south-2.amazonaws.com/vijay-ecr:IMAGE_ID"
           ports:
             - containerPort: 5000
